@@ -26,7 +26,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-bxps
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/my-app/devfile-sample-bxps@sha256:f1ac5d73fd7cf309a4bf3297c14072e44b4c37de19fc13689209adc526a8a710
         name: my-nodejs
         ports:
         - containerPort: 3001
