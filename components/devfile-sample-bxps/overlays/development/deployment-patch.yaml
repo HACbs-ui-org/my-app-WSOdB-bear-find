@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bxps
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/my-app/devfile-sample-bxps@sha256:f1ac5d73fd7cf309a4bf3297c14072e44b4c37de19fc13689209adc526a8a710
+        name: my-nodejs
+        resources: {}
+status: {}
